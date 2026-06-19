@@ -39,7 +39,7 @@ Simulador-de-Copa-2026/
 2. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/Simulador-de-Copa-2026.git
+git clone https://github.com/HerbertsDev/Simulador-de-Copa-2026.git
 ```
 
 3. Acesse a pasta do projeto:
