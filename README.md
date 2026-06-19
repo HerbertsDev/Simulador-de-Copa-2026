@@ -70,6 +70,40 @@ Brasil 1 x 0 Argentina → Classificado: Brasil
 
 Todos os resultados das partidas são armazenados em um banco SQLite, permitindo consultas e análises posteriores por meio dos scripts disponíveis em `consultas.sql`.
 
+## 🔍 Exemplos de Consultas SQL
+
+O projeto inclui consultas para analisar os resultados armazenados no banco de dados SQLite.
+
+### Listar todas as partidas
+
+```sql
+SELECT * FROM partidas;
+```
+
+### Ver todos os vencedores
+
+```sql
+SELECT vencedor
+FROM partidas;
+```
+
+### Contar vitórias por seleção
+
+```sql
+SELECT vencedor, COUNT(*) AS total_vitorias
+FROM partidas
+GROUP BY vencedor
+ORDER BY total_vitorias DESC;
+```
+
+### Exibir partidas da final
+
+```sql
+SELECT *
+FROM partidas
+WHERE fase = 'Final';
+```
+
 ## 🎯 Objetivo do Projeto
 
 Este projeto foi desenvolvido com o objetivo de praticar:
