@@ -18,7 +18,7 @@ def criar_banco():
         CREATE TABLE IF NOT EXISTS partidas (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             fase TEXT NOT NULL,
-            time1 TEXT NOT NUL  L,
+            time1 TEXT NOT NULL,
             time2 TEXT NOT NULL,
             gols1 INTEGER,
             gols2 INTEGER,
